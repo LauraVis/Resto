@@ -1,0 +1,14 @@
+:root{
+    --primary-color: rgb(241, 137, 77);
+    --secondary-color: rgb(197, 72, 0);
+}
+
+body{
+    font-family: 'Noto Naskh Arabic', serif;
+    overflow-y: auto; /*para que haya barra de scroll hasta abajo hasta donde haya elementos*/
+    overflow-x: hidden;/*todo lo que excede la pantalla de forma horizontal se corta, no se genera espacio en blanco*/
+}
+
+.text-serif{
+    font-family: "Karantina", serif;
+}

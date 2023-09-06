@@ -1,0 +1,43 @@
+.features{
+margin-top: 3rem;
+overflow-y: auto;
+}
+
+.features-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.feature{
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.feature > img{
+    width: 100%;
+    border-radius: 20px;
+    max-width: 300px;
+    aspect-ratio: 2/3; /*le da forma rectangular, porq era cuadrado*/
+    object-fit: cover; /*para que no pierda forma con el aspect ratio*/
+}
+
+.feature-title{
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.feature > p {
+    padding: 1rem 0;
+    width: 70%;
+    display: flexbox;
+    align-items: center;
+    margin-left: 15%;
+}
+
+@media (min-width:760px){
+    .features-wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+} /*se forman 3 columnas*/

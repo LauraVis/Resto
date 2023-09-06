@@ -1,0 +1,15 @@
+.navbar{
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.menu{
+  margin-top: 2.75rem;
+}
+
+.brand img{
+    width: 130px;
+    border-radius: 15px;
+}

@@ -1,0 +1,63 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+    gap: 1.5rem;
+    position: relative; /*para el circulo de abajo*/
+}
+
+.logo-footer > img {
+    border-radius: 30px;
+}
+
+.links a {
+    text-decoration: none;
+    color: white;
+    font-family: "Karantina", serif;
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 2.5px;
+    text-shadow: 1px 1px 3px black;
+}
+
+
+.links ul{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.links ul li{
+background-color: var(--secondary-color);
+border-radius: 15px;
+margin: 5px;
+padding: 15px;
+}
+
+.links ul li:hover{
+    background-color: rgb(228, 85, 2);
+}
+
+.copyright{
+    padding: 0.25rem;
+    margin-top: 1rem;
+}
+
+.copyright p{
+    padding: 5px;
+    font-weight: 800;
+}
+
+.footer-circle{
+    width: 150%;
+    height: 105%;
+    margin-top: 50px;
+    background-color: var(--primary-color);
+    position: absolute;
+    bottom: -200;
+    z-index: -2;
+    border-radius: 50% 50% 0 0;
+
+}

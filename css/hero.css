@@ -1,0 +1,72 @@
+.hero{
+    position: relative;
+    padding-bottom: 2rem;
+}
+
+.plate-wrapper{
+ position:relative;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 5rem;
+}
+
+.plate{
+    width: 120px;
+    height: auto;
+    padding: 1rem 0;
+}
+
+.plate-circle{
+    background-color: var(--primary-color);
+    width: 100%;
+    height: 100%;
+    position: absolute; /*flotante, de fondo*/
+    top: 0;
+    z-index: -1;
+    border-radius: 0 0 60% 60%;
+    transform: translate(0, -50%);
+}
+
+.hero-title{
+    font-size: 4rem;
+    text-align: center;
+    font-weight: 600;
+    font-stretch:ultra-expanded;
+}
+
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; /*separacion entre el titulo y el boton*/
+    align-items: center;
+}
+
+.hero-content > button{
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 0.75em 1em;
+    border-radius: 20px;
+    width: fit-content; /*se adapta al ancho del texto*/
+    font-family:'Noto Naskh Arabic', serif;;
+}
+
+.left{
+    width: 205px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    transform: translate(0%, 10%) ;
+}
+
+.right{
+    width: 205px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    /*margin-right: -20px;*/
+    transform: translate(10%, 13%) ;
+}
+
